@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Home</title>
+  </head>
+  <body class="lift:content_id=main">
+    <div id="main" class="lift:surround?with=default;at=content">
+      <h2>Welcome to your project!</h2>
+        <lift:msgs></lift:msgs>
+        Login form
+        <form class="lift:HelloWorld:login?form=POST" action="" method="POST">
+            <frm:name></frm:name>
+            <frm:password></frm:password>
+            <frm:login></frm:login>
+        </form>
+
+        Places Table
+
+        <lift:snippet type="HelloWorld.results">
+        <table>
+            <thead>
+            <tr><td>Name</td><td>Password</td></tr>
+            </thead>
+            <tbody>
+		<tbl:rows>
+                <tr><td><r:name></r:name></td><td><r:idn></r:idn></td></tr>
+		</tbl:rows>
+            </tbody>
+        </table>
+        </lift:snippet>
+    </div>
+  </body>
+</html>
+
